@@ -1,6 +1,6 @@
 import json
 
-CORPUS_SIZE = 10
+CORPUS_SIZE = 10000
 
 
 def getting_data(path):

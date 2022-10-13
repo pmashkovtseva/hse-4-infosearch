@@ -10,7 +10,8 @@ parser = argparse.ArgumentParser()
 
 def parsing_arguments():
     parser.add_argument("-d", "--data", type=Path, required=True, help="path to a .jsonl document")
-    parser.add_argument("-m", "--model", type=Path, required=True, help="path to a bert model")
+    parser.add_argument("-m", "--model", type=Path, required=False, help="path to a bert model", default="sberbank-ai"
+                                                                                                         "/sbert_large_nlu_ru")
     parser.add_argument("-q", "--query", type=str, required=True, help="search query as a string")
     parser.add_argument("-n", "--number_of_results", type=int, required=False, default=CORPUS_SIZE,
                         help="number of results sorted by "
