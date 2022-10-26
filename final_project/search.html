@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} lovesearch: поиск {% endblock %}
+
+{% block content %}
+    <div style="text-align: center;">
+        <h3>результаты поиска по запросу "{{query}}". на обработку запроса ушло {{time}} секунд.</h3>
+        <hr>
+        <br>
+            {% for i in range(results | length) %}
+                    {{i+1}}. {{results[i]}}
+        <br>
+        <br>
+            {% endfor %}
+    </div>
+{% endblock %}

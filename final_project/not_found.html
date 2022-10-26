@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %} lovesearch: ошибка {% endblock %}
+
+{% block content %}
+    <div style="text-align: center;">
+        <h2>Ого!</h2>
+        <br>
+        <h4>Кажется, по запросу "{{query}}" не нашлось результатов. Попробуем снова?</h4>
+    </div>
+{% endblock %}

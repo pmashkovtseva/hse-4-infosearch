@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %} lovesearch: faq {% endblock %}
+
+{% block content %}
+    <div style="text-align: center;">
+        <h4>как правильно задать запрос?</h4>
+        <hr>
+        запрос может быть любым. буквально. каким угодно.
+        <br>
+        <br>
+        <br>
+        <h4>как выглядит выдача?</h4>
+        <hr>
+        выдача состоит из 10 ответов, отранжированных по убыванию соответственно выбранной метрике.
+        <br>
+        <br>
+        <br>
+        <h4>каков размер корпуса?</h4>
+        <hr>
+        50000 вопросов и 50000 ответов.
+        <br>
+        <br>
+        <br>
+        <h4>что интересного есть в имплементации?</h4>
+        <hr>
+        страничка "нет результатов" для поиска по tf-idf. а еще поиск проводится по вопросам, а не ответам, для большего качества.
+        <br>
+        <br>
+        <br>
+        <h4>с какой скоростью работает поиск?</h4>
+        <hr>
+        по обеим метрикам - не больше секунды. при первичном поиске понадобится больше времени, чтобы подгрузились файлы с индексами.
+        <br>
+        <br>
+        <br>
+        <h4>p.s.: копирайт-информация про картинки, потому что интеллектуальный труд - это важно</h4>
+        <hr>
+        иконка: <a href="https://commons.wikimedia.org/wiki/File:Heart_icon_red_hollow.svg">File:Heart left-highlight jon 01.svg: Jon Phillipsderivative work Bagande</a>, CC0, via Wikimedia Commons
+        <br>
+        фон: Photo by <a href="https://unsplash.com/@freestocks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">freestocks</a> on <a href="https://unsplash.com/s/photos/love?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+{% endblock %}
